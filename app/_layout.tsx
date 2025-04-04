@@ -1,3 +1,5 @@
+import { Provider } from 'react-redux';
+import store from './store';
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
@@ -28,12 +30,16 @@ export default function RootLayout() {
   }
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+        <Stack>
+          <Stack.Screen name="IndexPage" options={{ headerShown: false }} /> {/* Đảm bảo sử dụng đúng tên */}
+          <Stack.Screen name="pokemonSearch" options={{ title: 'Pokemon Search' }} />
+          <Stack.Screen name="otherPage" options={{ title: 'Other Page' }} />
+          <Stack.Screen name="+not-found" options={{ title: 'Not Found' }} />
+        </Stack>
+        <StatusBar style="auto" />
+      </ThemeProvider>
+    </Provider>
   );
 }

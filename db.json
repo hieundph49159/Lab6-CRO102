@@ -1,0 +1,66 @@
+{
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "pikachu",
+      "type": "Electric",
+      "abilities": [
+        "Static",
+        "Lightning Rod"
+      ],
+      "height": 0.4,
+      "weight": 6,
+      "image": "https://sg.portal-pokemon.com/play/resources/pokedex/img/pm/3bfcc4360c44f37815dc1e59f75818935cbfc41b.png"
+    },
+    {
+      "id": 2,
+      "name": "Bulbasaur",
+      "type": "Grass/Poison",
+      "abilities": [
+        "Overgrow",
+        "Chlorophyll"
+      ],
+      "height": 0.7,
+      "weight": 6.9,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+    },
+    {
+      "id": 3,
+      "name": "a",
+      "type": "Grass/Poison",
+      "abilities": [
+        "Overgrow",
+        "Chlorophyll"
+      ],
+      "height": 0.7,
+      "weight": 6.9,
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+    }
+  ],
+  "users": [
+    {
+      "id": "2b92",
+      "name": "ieu",
+      "age": "19",
+      "email": "hieundp49159",
+      "password": "123456",
+      "gender": "other"
+    },
+    {
+      "id": "f897",
+      "name": "",
+      "age": "",
+      "email": "",
+      "password": "",
+      "gender": "other"
+    },
+    {
+      "id": "037a",
+      "name": "duchieu",
+      "age": "19",
+      "email": "hieundph49159@gmail.com",
+      "password": "123456",
+      "gender": "female"
+    }
+  ]
+}
